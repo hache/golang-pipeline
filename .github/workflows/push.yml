@@ -50,5 +50,3 @@ jobs:
           push: true
           tags: |
             hadrianvillar:latest
-          build-args: |
-            ${{steps.version_step.outputs.version}}
