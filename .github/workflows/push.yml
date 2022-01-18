@@ -49,7 +49,6 @@ jobs:
         with:
           push: true
           tags: |
-            ${{env.VERSION_TAG}}
-            ${{env.LASTEST_TAG}}
+            hadrianvillar:latest
           build-args: |
             ${{steps.version_step.outputs.version}}
