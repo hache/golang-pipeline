@@ -1,10 +1,10 @@
 name: golang-pipeline
+ env:
+         REPODOCKER: 'hadrianvillar'
 on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      REPODOCKER: 'hadrianvillar'
     if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags')
     steps:
       - uses: actions/checkout@v2
