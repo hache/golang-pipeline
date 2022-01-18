@@ -1,7 +1,7 @@
 name: golang-pipeline
- env:
-         REPODOCKER: 'hadrianvillar'
 on: push
+env:
+ REPODOCKER: 'hadrianvillar'
 jobs:
   test:
     runs-on: ubuntu-latest
